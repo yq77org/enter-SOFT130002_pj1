@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浏览页</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/navigationbar.css">
+    <link rel="stylesheet" type="text/css" href="css/browser.css">
+</head>
+<body>
+<!--导航栏-->
+<div class="NavigationBar">
+    <div>
+        <a href="./home.html">
+            <img src="../img/logo.png" alt="logo">
+        </a>
+    </div>
+
+    <div class="Nav_left">
+        <ul>
+            <li>
+                <a href="./home.html">首页</a>
+            </li>
+            <li>
+                <a href="./browser.html" class="highlight">浏览页</a>
+            </li>
+            <li>
+                <a href="./search.html">搜索⻚</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="Nav_right dropdown">
+        <span class="dropbtn">个⼈中⼼<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+        <div class="dropdown-content">
+            <a href="./upload.html"><i class="fa fa-upload" aria-hidden="true"></i> 上传</a>
+            <a href="./myPhoto.html"><i class="fa fa-picture-o" aria-hidden="true"></i> 我的照⽚</a>
+            <a href="./favor.html"><i class="fa fa-heart" aria-hidden="true"></i> 我的收藏</a>
+            <a href="../index.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 登⼊</a>
+        </div>
+    </div>
+</div>
+
+<!--侧边栏-->
+<aside>
+    <div class="left-search">
+        <form name="form1" action="" method="get">
+            <label>
+                <input name="text1" type="text" placeholder="请输入标题进行搜索">
+                <button type="submit" onclick="alert('图⽚已刷新')"><i class="fa fa-search" aria-hidden="true"></i> </button>
+            </label>
+        </form>
+
+    </div>
+    <div>
+        <div class="left-coci">
+            热⻔国家快速浏览
+        </div>
+        <div class="left-detail">
+            <ul>
+                <li><a onclick="alert('图⽚已刷新')">中国</a></li>
+                <li><a onclick="alert('图⽚已刷新')">日本</a></li>
+                <li><a onclick="alert('图⽚已刷新')">韩国</a></li>
+                <li><a onclick="alert('图⽚已刷新')">美国</a></li>
+                <li><a onclick="alert('图⽚已刷新')">泰国</a></li>
+                <li><a onclick="alert('图⽚已刷新')">英国</a></li>
+                <li><a onclick="alert('图⽚已刷新')" class="last">法国</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <div class="left-coci">
+            热⻔城市快速浏览
+        </div>
+        <div class="left-detail">
+            <ul>
+                <li><a onclick="alert('图⽚已刷新')">上海</a></li>
+                <li><a onclick="alert('图⽚已刷新')">北京</a></li>
+                <li><a onclick="alert('图⽚已刷新')">香港</a></li>
+                <li><a onclick="alert('图⽚已刷新')">纽约</a></li>
+                <li><a onclick="alert('图⽚已刷新')">伦敦</a></li>
+                <li><a onclick="alert('图⽚已刷新')">巴黎</a></li>
+                <li><a onclick="alert('图⽚已刷新')" class="last">东京</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="left-coci">
+        热⻔内容快速浏览
+    </div>
+    <div class="left-detail">
+        <ul>
+            <li><a onclick="alert('图⽚已刷新')">田园</a></li>
+            <li><a onclick="alert('图⽚已刷新')">山峰</a></li>
+            <li><a onclick="alert('图⽚已刷新')">草原</a></li>
+            <li><a onclick="alert('图⽚已刷新')">沙漠</a></li>
+            <li><a onclick="alert('图⽚已刷新')">江河</a></li>
+            <li><a onclick="alert('图⽚已刷新')">寺庙</a></li>
+            <li><a onclick="alert('图⽚已刷新')" class="last">森林</a></li>
+        </ul>
+    </div>
+    </div>
+</aside>
+
+<!--主体-->
+<div class="main">
+    <!--选择栏-->
+    <div class="choice">
+        <label>
+            <select id="selConcept">
+                <option>选择主题</option>
+                <option>田园风光</option>
+                <option>雄伟恢弘</option>
+                <option>民族风情</option>
+                <option>金碧辉煌</option>
+            </select>
+            <select id="selCountry">
+                <option>选择国家</option>
+            </select>
+            <select  id="selCity">
+                <option>选择城市</option>
+            </select>
+            <button type="submit" onclick="alert('图⽚已刷新')"><i class="fa fa-search" aria-hidden="true"></i> </button>
+        </label>
+    </div>
+
+    <!--搜索结果展示-->
+    <div>
+        <div>
+            <a href="./details.html"><div class="pic" style="background-image: url(../img/222222.jpg)"></div></a>
+            <a href="./details.html"><div class="pic" style="background-image: url(../img/222222.jpg)"></div></a>
+            <a href="./details.html"><div class="pic" style="background-image: url(../img/222222.jpg)"></div></a>
+            <a href="./details.html"><div class="pic" style="background-image: url(../img/222222.jpg)"></div></a>
+        </div>
+        <br>
+        <div>
+            <a href="./details.html"><div class="pic" style="background-image: url(../img/222222.jpg)"></div></a>
+            <a href="./details.html"><div class="pic" style="background-image: url(../img/222222.jpg)"></div></a>
+            <a href="./details.html"><div class="pic" style="background-image: url(../img/222222.jpg)"></div></a>
+            <a href="./details.html"><div class="pic" style="background-image: url(../img/222222.jpg)"></div></a>
+        </div>
+        <br>
+        <div>
+            <a href="./details.html"><div class="pic" style="background-image: url(../img/222222.jpg)"></div></a>
+            <a href="./details.html"><div class="pic" style="background-image: url(../img/222222.jpg)"></div></a>
+            <a href="./details.html"><div class="pic" style="background-image: url(../img/222222.jpg)"></div></a>
+            <a href="./details.html"><div class="pic" style="background-image: url(../img/222222.jpg)"></div></a>
+        </div>
+        <br>
+        <div>
+            <a href="./details.html"><div class="pic" style="background-image: url(../img/222222.jpg)"></div></a>
+            <a href="./details.html"><div class="pic" style="background-image: url(../img/222222.jpg)"></div></a>
+            <a href="./details.html"><div class="pic" style="background-image: url(../img/222222.jpg)"></div></a>
+            <a href="./details.html"><div class="pic" style="background-image: url(../img/222222.jpg)"></div></a>
+        </div>
+        <br>
+
+
+
+    </div>
+    <!--⻚码显示-->
+    <div class="page">
+        <br><br>
+        <label>
+            <button onclick="alert('页面已跳转')"><i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
+            <button onclick="alert('页面已跳转')" class="highlight">1</button>
+            <button onclick="alert('页面已跳转')">2</button>
+            <button onclick="alert('页面已跳转')">3</button>
+            <button onclick="alert('页面已跳转')">4</button>
+            <button onclick="alert('页面已跳转')">5</button>
+            <button onclick="alert('页面已跳转')"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+
+        </label>
+
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<!--页脚-->
+<footer>
+    <br>copyright © SOFT130002 The App All Rights Reserved.FDU备案号：17307130286
+</footer>
+
+<!--多级选择函数-->
+<script>
+    var jsonData = [
+        {
+            "country":"中国",
+            "cities":["上海","杭州","苏州","背景"]
+        },
+        {
+            "country":"日本",
+            "cities":["东京", "大阪", "京都","横滨"]
+        },
+        {
+            "country":"韩国",
+            "cities":["首尔","釜山","大田","大邱"]
+        },
+        {
+            "country":"美国",
+            "cities":["洛杉矶","纽约", "华盛顿"]
+        },
+        {
+            "country":"泰国",
+            "cities":["曼谷","清迈", "苏梅岛"]
+        },
+        {
+            "country":"英国",
+            "cities":["伦敦","伯明翰", "爱丁堡"]
+        }
+    ];
+
+    function initialize() {
+        var countries = document.getElementById("selCountry");
+        var countriesHtmlS="<option selected value='notSelected'>选择国家</option>";
+        for(var i=0;i<jsonData.length;i++){
+            countriesHtmlS+="<option value='"+jsonData[i].country+"'>"+jsonData[i].country+"</option>";
+        }
+        countries.innerHTML = countriesHtmlS;
+    }
+    initialize();
+
+    var select= document.getElementById("selCountry");
+
+    select.onchange=function () {
+        console.log("selected onchange");//
+        var index=-1;
+        for(var i=0;i<jsonData.length;i++){
+            if(select.value==jsonData[i].country){
+                index = i;
+                break;
+            }
+        }
+        if(index>=0){
+            var citiesHtmlS = "<option selected value='notSelected'>选择城市</option>";
+            var cities = document.getElementById("selCity");
+            for(var i=0;i<jsonData[index].cities.length;i++){
+                citiesHtmlS +="<option value='"+jsonData[index].cities[i]+"'>"+jsonData[index].cities[i]+"</option>";
+            }
+            cities.innerHTML = citiesHtmlS;
+        }
+
+    }
+
+</script>
+</body>
+</html>

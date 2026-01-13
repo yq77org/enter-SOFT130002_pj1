@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/navigationbar.css">
+    <link rel="stylesheet" type="text/css" href="css/upload.css">
+</head>
+<body>
+<!--导航栏-->
+<div class="NavigationBar">
+    <div>
+        <a href="./home.html">
+            <img src="../img/logo.png" alt="logo">
+        </a>
+    </div>
+
+    <div class="Nav_left">
+        <ul>
+            <li>
+                <a href="./home.html">首页</a>
+            </li>
+            <li>
+                <a href="./browser.html">浏览页</a>
+            </li>
+            <li>
+                <a href="./search.html">搜索⻚</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="Nav_right dropdown">
+        <span class="dropbtn">个⼈中⼼<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+        <div class="dropdown-content">
+            <a href="./upload.html"><i class="fa fa-upload" aria-hidden="true"></i> 上传</a>
+            <a href="./myPhoto.html"><i class="fa fa-picture-o" aria-hidden="true"></i> 我的照⽚</a>
+            <a href="./favor.html"><i class="fa fa-heart" aria-hidden="true"></i> 我的收藏</a>
+            <a href="../index.html"><i class="fa fa-sign-in" aria-hidden="true"></i> 登⼊</a>
+        </div>
+    </div>
+</div>
+
+<div class="centerpart">
+    <form id="form">
+        <!--图片上传...-->
+        <div class="upload">
+            <div id="showingImageDiv"class="imagePosition" >
+                <br><br><br><br><br><br>
+                图片未上传
+            </div>
+            <div class="buttonPosition">
+                <button>上传图片 <i class="fa fa-upload" aria-hidden="true"></i></button>
+                <input type="file" id="chooseImage" value="null" name="file" accept="image/png,image/jpeg" onchange="renderImg()">
+            </div>
+        </div>
+
+        <div class="widcover">
+            <div>
+                <br><h4>图⽚标题</h4>
+                    <input type="text">
+            </div>
+            <div>
+                <br><h4>图⽚描述</h4>
+                    <textarea rows="30"></textarea>
+            </div>
+            <div>
+                <br><h4>拍摄国家</h4>
+                    <input type="text">
+            </div>
+            <div>
+                <br><h4>拍摄城市</h4>
+                    <input type="text">
+            </div>
+        </div>
+
+        <div class="submit">
+            <input type="button" value="确认提交" onclick="submitupload()">
+        </div>
+
+
+
+    </form>
+</div>
+
+<!--页脚-->
+<footer>
+    <br>copyright © SOFT130002 The App All Rights Reserved.FDU备案号：17307130286
+</footer>
+
+<script>
+    function uploadImg(){
+        document.getElementById("chooseImage").click();
+    }
+
+    function renderImg() {
+        var file =  document.getElementById('chooseImage').files[0];
+        var re = new FileReader();
+        re.readAsDataURL(file);
+        re.onload = function(re){
+            var imagediv=document.getElementById("showingImageDiv");
+            imagediv.innerHTML=" <img id=\"showingImage\" src=\""+re.target.result+"\" alt=\"图片未加载成功\">";
+        }
+    }
+
+    function submitupload() {
+        alert('提交完成');
+        window.location.href="./myPhoto.html";
+        console.log("done");
+
+    }
+</script>
+
+</body>
+</html>

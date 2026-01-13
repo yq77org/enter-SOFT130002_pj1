@@ -10,7 +10,7 @@ img{
     object-fit: contain;
 }
 
-input[type="text"],input[type="password"]{
+input{
     height:40px;
     width: 45%;
     border-style:solid;
@@ -21,22 +21,17 @@ input[type="text"],input[type="password"]{
 }
 
 button{
-     height: 40px;
-     width: 20%;
-     background-color: hotpink;
-     color: white;
-     cursor: pointer;
-     border-radius: 10px;
- }
+    height: 40px;
+    width: 20%;
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
 
 button:hover{
     background-color: white;
-    color: hotpink;
-}
-
-.tosigneup{
-    margin-top:50px;
-    color:white;
+    color: cornflowerblue;
 }
 
 footer{
