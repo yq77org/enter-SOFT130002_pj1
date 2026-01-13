@@ -23,7 +23,7 @@ input[type="text"],input[type="password"]{
 button{
      height: 40px;
      width: 20%;
-     background-color: hotpink;
+     background-color: mediumseagreen;
      color: white;
      cursor: pointer;
      border-radius: 10px;
@@ -31,7 +31,7 @@ button{
 
 button:hover{
     background-color: white;
-    color: hotpink;
+    color: mediumseagreen;
 }
 
 .tosigneup{
